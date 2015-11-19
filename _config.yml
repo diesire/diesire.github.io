@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               alone
+tagline:             'A Jekyll theme'
+description:         'A clean theme based on <a href="http://lanyon.getpoole.com">Lanyon</a>'
+url:                 http://diesire.github.io
+baseurl:             '/alone'
+paginate:            5
+
+# About/contact
+author:
+  name:              diesire
+  url:               https://twitter.com/diesire
+  email:             diesire@gmail.com
+
+# Custom vars
+version:             0.0.1
