@@ -5,11 +5,11 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               alone
-tagline:             'A Jekyll theme'
-description:         'A clean theme based on <a href="http://lanyon.getpoole.com">Lanyon</a>'
+title:               diesire
+tagline:             'Personal site'
+description:         'diesire Personal site'
 url:                 http://diesire.github.io
-baseurl:             '/alone'
+baseurl:             ''
 paginate:            5
 
 # About/contact
