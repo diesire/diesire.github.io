@@ -1,6 +1,6 @@
-# Alone
+# diesire.github.io
 
-Alone ia a clean [Jekyll](http://jekyllrb.com) theme . It's based on [Lanyon](http://lanyon.getpoole.com).
+[diesire.github.io](http://diesire.github.io) is a personal site based on [alone](http://diesire.github.io/alone).
 
 ## License
 
