@@ -12,6 +12,10 @@ url:                 http://diesire.github.io
 baseurl:             ''
 paginate:            5
 
+markdown: redcarpet
+redcarpet:
+  extensions:        ['smart', 'tables', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'strikethrough', 'superscript', 'with_toc_data', 'footnotes', 'highlight']
+
 # About/contact
 author:
   name:              diesire
@@ -19,4 +23,18 @@ author:
   email:             diesire@gmail.com
 
 # Custom vars
-version:             0.0.1
+version:             0.1.0
+
+# Comments
+disqus:
+  shortname:         diesire
+
+# enable comments in posts by default
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      comments: true # enable comments
+      comments_count: true # enable comments count
