@@ -1,0 +1,49 @@
+<div class="container comments">
+  {% if page.comments %}
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '{{site.disqus.shortname}}';
+    var disqus_identifier = "{{ page.url }}";
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  {% endif %}
+
+  {% if page.comments_count %}
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '{{site.disqus.shortname}}';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  </script>
+  {% endif %}
+</div>
+
+<!-- To see comment counter
+Add this snippet to post.html layout
+{% if page.comments and page.comments_count%}
+<span class="post-count">
+  <a href="{{ site.baseurl }}{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
+</span>
+{% endif %}
+
+Or this other to index.html
+{% if page.comments_count%}
+<span class="post-count">
+  <a href="{{ site.baseurl }}{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+</span>
+{% endif %}
+-->

@@ -159,8 +159,7 @@ GFM ignores underscores in words, like this:
 
 ### Strikethrough
 
-GFM adds syntax to create strikethrough text, which is missing from standard Markdown.
-* ~~Mistaken text.~~
+GFM adds syntax to create ~~mistaken~~ strikethrough text, which is missing from standard Markdown.
 
 ### Fenced code blocks
 
@@ -208,6 +207,33 @@ Content Cell  | Content Cell
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
+
+
+## Redcarpet
+
+### Footnotes
+
+This is a sentence.[^1]
+
+This is anothers sentence.[^2]
+
+[^1]: This is a footnote
+[^2]: This is another footnote
+
+### Superscript
+
+This is the 1^st time, this is the 2^(nd) time
+
+### Highlight
+
+This is ==highlighted==
+
+### Smart punctuation
+
+* Simple quotes into 'curly' quote HTML entities
+* Double quotes into "curly" quote HTML entities
+* Dashes (-- and ---) into en- and em-dash entities
+* Three consecutive dots (“...”) into an ellipsis entity
 
 -----
 
